@@ -1,0 +1,67 @@
+@(requestHeader: RequestHeader)(implicit request: MessagesRequestHeader)
+
+<h1>@requestHeader.method @requestHeader.uri</li>
+
+<h1>views.html.helper.form</h1>
+@helper.form(routes.Application.get) {
+  <input type="submit" value="GET Form" />
+}
+
+@helper.form(routes.Application.post) {
+  @helper.CSRF.formField
+  <input type="submit" value="POST Form" />
+}
+
+@helper.form(routes.Application.put) {
+  <input type="submit" value="PUT Form - 404" />
+}
+
+@helper.form(routes.Application.patch) {
+  <input type="submit" value="PATCH Form - 404" />
+}
+
+@helper.form(routes.Application.delete) {
+  <input type="submit" value="DELETE Form - 404" />
+}
+
+@helper.form(routes.Application.head) {
+  <input type="submit" value="HEAD Form - 404" />
+}
+
+@helper.form(routes.Application.options) {
+  <input type="submit" value="OPTIONS Form - 404" />
+}
+
+
+<h1>com.github.plippe.play.form.form</h1>
+@com.github.plippe.play.form.form(routes.Application.get) {
+  <input type="submit" value="GET Form" />
+}
+
+@com.github.plippe.play.form.form(routes.Application.post) {
+  @helper.CSRF.formField
+  <input type="submit" value="POST Form" />
+}
+
+@com.github.plippe.play.form.form(routes.Application.put) {
+  @helper.CSRF.formField
+  <input type="submit" value="PUT Form" />
+}
+
+@com.github.plippe.play.form.form(routes.Application.patch) {
+  @helper.CSRF.formField
+  <input type="submit" value="PATCH Form" />
+}
+
+@com.github.plippe.play.form.form(routes.Application.delete) {
+  @helper.CSRF.formField
+  <input type="submit" value="DELETE Form" />
+}
+
+@com.github.plippe.play.form.form(routes.Application.head) {
+  <input type="submit" value="HEAD Form" />
+}
+
+@com.github.plippe.play.form.form(routes.Application.options) {
+  <input type="submit" value="OPTIONS Form" />
+}

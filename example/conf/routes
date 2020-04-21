@@ -1,0 +1,9 @@
+GET     /        controllers.Default.redirect(to = "/get")
+
+GET     /get     controllers.Application.get
+POST    /post    controllers.Application.post
+PUT     /put     controllers.Application.put
+PATCH   /patch   controllers.Application.patch
+DELETE  /delete  controllers.Application.delete
+HEAD    /head    controllers.Application.head
+OPTIONS /options controllers.Application.options

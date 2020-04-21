@@ -1,1 +1,40 @@
+# Created by https://www.gitignore.io/api/playframework,sbt,scala
+# Edit at https://www.gitignore.io/?templates=playframework,sbt,scala
+
+### PlayFramework ###
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.eml
+/dist/
+.cache
+
+### SBT ###
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
 target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.lib/
+
+### Scala ###
+*.class
+*.log
+*.metals
+
+# End of https://www.gitignore.io/api/playframework,sbt,scala
