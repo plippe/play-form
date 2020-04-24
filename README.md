@@ -34,7 +34,7 @@ libraryDependencies += "com.github.plippe" %% "play-form" % "2.8.x"
 After that you need to configure the [request handler](https://www.playframework.com/documentation/2.8.x/ScalaHttpRequestHandlers) inside your application.conf:
 
 ```hocon
-play.http.requestHandler = "com.github.plippe.play.form.RequestHandler"
+play.http.requestHandler = "com.github.plippe.play.form.DefaultHttpRequestHandler"
 ```
 
 ## Usage
